@@ -457,6 +457,11 @@ ul { padding-left: 1.25rem; }
   color: #94a3b8;
   font-size: 0.9375rem;
 }
+.contact-phone {
+  font-size: 1.125rem;
+  margin: 0 0 1rem;
+}
+.contact-phone a { color: #7dd3fc; }
 .contact-email {
   font-size: 1.125rem;
   margin: 0 0 1rem;
