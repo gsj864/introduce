@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q&A | 홍길동</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-qa">
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">홍길동</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">소개</a></li>
+        <li><a href="index.html#tech">기술</a></li>
+        <li><a href="index.html#projects">프로젝트</a></li>
+        <li><a href="index.html#growth">성장</a></li>
+        <li><a href="index.html#contact">연락</a></li>
+        <li><a href="qa.html">Q&A</a></li>
+      </ul>
+      <button type="button" class="nav-toggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="section-title">Q&A</h1>
+      <p>궁금한 점을 질문해 주세요. 답변 완료된 질문만 공개됩니다.</p>
+
+      <form class="qa-form" id="qaForm">
+        <label for="question">질문 내용</label>
+        <textarea id="question" name="question" placeholder="질문을 입력해 주세요." required></textarea>
+        <button type="submit" class="btn btn-submit">질문 등록</button>
+      </form>
+
+      <h2 class="section-title" style="font-size: 1.25rem;">답변 완료된 질문</h2>
+      <ul class="qa-list" id="qaList"></ul>
+      <p class="qa-empty" id="qaEmpty" hidden>아직 답변된 질문이 없습니다.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><a href="index.html">메인으로</a> · &copy; 2026 홍길동</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/qa.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>관리자 · Q&A | 홍길동</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-admin">
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">홍길동</a>
+      <ul class="nav-links">
+        <li><a href="index.html">메인</a></li>
+        <li><a href="qa.html">Q&A</a></li>
+      </ul>
+      <button type="button" class="nav-toggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="section-title">Q&A 관리</h1>
+      <p>질문 목록과 답변을 관리합니다. (관리자 전용)</p>
+      <ul class="admin-list" id="adminList"></ul>
+      <p class="qa-empty" id="adminEmpty" hidden>등록된 질문이 없습니다.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><a href="qa.html">Q&A 페이지로</a> · &copy; 2026 홍길동</p>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
